@@ -1,0 +1,88 @@
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+
+/* === MODAL === */
+.modal-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    position: relative;
+    background: white;
+    padding: 30px;
+    margin: 15px;
+    border-radius: 8px;
+}
+
+.modal.mini {
+    max-width: 570px;
+    margin: 30px auto;
+}
+
+.close-modal {
+    position: absolute;
+    margin: 5px;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.fullscreen-modal {
+    position: absolute;
+    margin: 5px;
+    top: 0px;
+    right: 25px;
+    cursor: pointer;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content img {
+    height: 200px;
+    width: 510px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.modal-content .modal-recipe-name {
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.modal-content .modal-recipe-author {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--author-color);
+}
+
+/* === MODAL ACTIVE === */
+body.hidden-overflow {
+    height: 100%;
+    overflow: hidden;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* === MODAL FULLSCREEN === */
+/* .modal.mini {
+    max-width: 570px;
+    position: relative;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+} */

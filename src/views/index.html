@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Foodfy</title>
+        <link rel="shortcut icon" href="/public/assets/favicon.ico" type="image/x-icon">
+
+        <link rel="stylesheet" href="/public/styles/main.css">
+        <link rel="stylesheet" href="/public/styles/home.css">
+        <link rel="stylesheet" href="/public/styles/modal.css">
+
+    </head>
+
+    <body>
+        <div id="page-container">
+            <div id="content-container">
+                <header>
+                    <a class="logo" href="#">
+                        <img class="foodfy-logo" src="/public/assets/logo.png" alt="Logo do Foodfy">
+                        <img class="vegan-logo" src="/public/assets/vegan-logo.svg" alt="Logo versão Vegan">
+
+                    </a>
+
+                    <nav class="menu">
+                        <a href="/src/views/about.html">Sobre</a>
+                        <a href="/src/views/recipes.html">Receitas</a>
+
+                    </nav>
+
+                </header>
+
+                <main>
+                    <section class="website-info">
+                        <div class="text">
+                            <h1>As melhores receitas</h1>
+                            <p>Aprenda a construir os melhores pratos com receitas veganas criadas por profissionais do mundo inteiro.</p>
+
+                        </div>
+                        
+                        <div class="image">
+                            <img src="/public/assets/chef.png" alt="Personagem cozinheiro do Foodfy">
+
+                        </div>
+
+                    </section>
+
+                    <section class="most-relevant">
+                        <h2>Mais acessadas</h2>
+
+                        <div class="cards">
+                            <div class="card">
+                                <img src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe/recipe-image/2017/07/satay-sweet-potato-curry.jpg?itok=bl5QzsfL" alt="Satay Sweet Potato Curry foto">
+
+                                <div class="info">
+                                    <h3 class="recipe-name">Satay Sweet Potato Curry</h3>
+                                    <p class="recipe-author">por Elena Silcock</p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="card">
+                                <img src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe/recipe-image/2018/07/vegan-chilli.jpg?itok=llhQ6gn2" alt="Vegan Chili foto">
+
+                                <div class="info">
+                                    <h3 class="recipe-name">Vegan Chili</h3>
+                                    <p class="recipe-author">por Barney Desmazery</p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="card">
+                                <img src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe/recipe-image/2019/07/vegan-sausage-rolls.jpg?itok=qtu0l1Tf" alt="Vegan Sausage Rolls foto">
+
+                                <div class="info">
+                                    <h3 class="recipe-name">Vegan Sausage Rolls</h3>
+                                    <p class="recipe-author">por Esther Clark</p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="card">
+                                <img src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe/recipe-image/2019/05/vegan-cupcakes-.jpg?itok=jnVDE5QJ" alt="Vegan Cupcakes foto">
+
+                                <div class="info">
+                                    <h3 class="recipe-name">Vegan Cupcakes</h3>
+                                    <p class="recipe-author">por Anna Glover</p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="card">
+                                <img src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe/recipe-image/2018/08/brownies.jpg?itok=aevx5ab8" alt="Vegan Brownies foto">
+
+                                <div class="info">
+                                    <h3 class="recipe-name">Vegan Brownies</h3>
+                                    <p class="recipe-author" >por Cassie Best</p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="card">
+                                <img src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe/recipe-image/2019/11/vegan-meatballs.jpg?itok=j5Wxsl2F" alt="Vegan Meatballs foto">
+
+                                <div class="info">
+                                    <h3 class="recipe-name">Vegan Meatballs</h3>
+                                    <p class="recipe-author">por Esther Clark</p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                </main>
+            
+            </div>
+
+            <footer>
+                <p>Todos direitos reservados, receitas Foodfy Vegan.</p>
+
+            </footer>
+        
+        </div>
+
+        <div class="modal-overlay">
+            <div class="modal mini">
+                <div class="close-modal">
+                    <i class="material-icons">close</i>
+
+                </div>
+
+                <div class="fullscreen-modal">
+                    <i id="fullscreen-icon" class="material-icons">fullscreen</i>
+
+                </div>
+
+                <div class="modal-content">
+                    <img src="" alt="">
+                    <h2 class="modal-recipe-name"></h2>
+                    <p class="modal-recipe-author"></p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <script src="/public/scripts/modal.js"></script>
+
+    </body>
+
+</html>

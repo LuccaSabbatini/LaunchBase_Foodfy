@@ -1,0 +1,18 @@
+/* === FOODFY INFO === */
+main h1, h2 {
+    margin: 30px 0 20px;
+}
+
+main h1 {
+    font-size: 24px;
+}
+
+main h2 {
+    font-size: 20px;
+}
+
+main p {
+    font-size: 18px;
+    color: var(--text-color);
+    line-height: 28px;
+}

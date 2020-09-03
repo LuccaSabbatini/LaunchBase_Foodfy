@@ -1,0 +1,77 @@
+/* === WEBSITE INFO === */
+.website-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 40px;
+    background: var(--secondary-color);
+    border-radius: 30px;
+}
+
+.website-info .text {
+    margin: auto;
+}
+
+.website-info .text p {
+    margin-top: 10px;
+    opacity: 0.7;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    max-width: 320px;
+}
+
+.website-info img {
+    margin: 0 auto;
+    display: flex;
+    height: 300px;
+}
+
+/* === MOST RELEVANT === */
+.most-relevant {
+    margin-top: 40px;
+}
+
+.most-relevant h2 {
+    margin-left: 10px;
+}
+
+.most-relevant .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.most-relevant .card {
+    cursor: pointer;
+    margin: 10px auto;
+}
+
+.most-relevant .card img {
+    height: 140px;
+    width: 300px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.most-relevant .card .recipe-name {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.most-relevant .card .recipe-author {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--author-color);
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 960px) {
+    .most-relevant .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 650px) {
+    .most-relevant .cards {
+        grid-template-columns: 1fr;
+    }
+}

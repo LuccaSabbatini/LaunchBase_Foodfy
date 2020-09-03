@@ -1,0 +1,41 @@
+/* === RECIPES === */
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+    cursor: pointer;
+    margin: 10px auto;
+}
+
+.card img {
+    height: 140px;
+    width: 300px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.card .recipe-name {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.card .recipe-author {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--author-color);
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 960px) {
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 650px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
